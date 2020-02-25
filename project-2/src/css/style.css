@@ -129,8 +129,8 @@ button:focus {
 }
 
 .sale-img {
-	margin-right: 30px;
 	margin-bottom: 40px;
+	margin-right: 30px;
 }
 
 .sale-img:nth-child(4n) {
@@ -140,3 +140,5 @@ button:focus {
 .sale-img:nth-child(n+5) {
 	margin-bottom: 0;
 }
+
+
