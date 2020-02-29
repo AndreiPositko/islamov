@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    padding-top: 77px;
+    padding-bottom: 96px;
+}
+
+.header-text__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.header-text__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+.header-text__descr {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 47px;
+}
+
+.header-text___price {
+    font-size: 48px;
+    font-weight: 400;
+    color: #313131;
+    padding-bottom: 53px;
+}
+
+.button {
+    border: none;
+    padding: 22px 43px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #f05a22;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 40px;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.button-o {
+    background: transparent;
+    color: #f05a22;
+    border: 2px solid #f05a22;
+}
+
+.features {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.features-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+
+.features__img {
+    min-height: 55px;
+    margin-bottom: 15px;
+}
+
+.features__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.sale {
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.sale-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.sale-item {
+    margin-bottom: 40px;
+}

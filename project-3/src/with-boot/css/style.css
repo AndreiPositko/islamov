@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 97px 97px;
+}
+
+.row {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.features {
+    text-align: center;
+    position: relative;
+    max-height: 82px;
+    padding-top: 70%;
+}
+
+.features-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    max-width: 122px;
+    margin: 0 auto;
+}
