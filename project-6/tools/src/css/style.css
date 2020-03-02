@@ -12,6 +12,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 .container {
 	padding: 100px 0;
 	width: 1140px;
@@ -66,4 +70,8 @@ a {
 	padding: 23px 75px;
 	color: #23bac1;
 	border: 1px solid #23bac1;
+}
+
+.ruller {
+	min-height: 209px;
 }

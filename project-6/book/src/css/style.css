@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Tahoma", sans-serif;
+}
+
+.header {
+	padding-top: 77px;
+	padding-bottom: 96px;
+
+	width: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-img {
+	max-width: 404px;
+	margin-right: 75px;
+	width: 40%;
+}
+
+.header-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 60%;
+}
+.header-text__title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.header-text__subtitle {
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+.header-text__descr {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 47px;
+}
+
+.header-text__price {
+	display: block;
+	font-size: 48px;
+	font-weight: 400;
+	margin-bottom: 53px;
+}
+
+.button {
+	font-size: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	border: none;
+	background-color: #f05a22;
+	border-radius: 5px;
+	padding: 22px 43px;
+	margin-right: 40px;
+	border: 2px solid transparent;
+	outline: none;
+}
+
+.button-o {
+	background-color: transparent;
+	border: 2px solid #f05a22;
+	color:  #f05a22;
+}
+
+.features {
+	background-color: #f2f2f2;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+.features-title {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 91px;
+}
+
+.features-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	width: 25%;
+}
+
+.feature-item__img {
+	position: relative;
+	text-align: center;
+	max-height: 58px;
+	padding-top: 30%;
+}
+
+.feature-item__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.feature-item__descr {
+	max-width: 241px;
+}
+
+.sale {
+	padding-top: 90px;
+	padding-bottom: 110px;
+}
+
+.sale-title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 70px;
+}
+
+.sale-wrapper {
+	flex-wrap: wrap;
+	margin-bottom: -40px;
+}
+
+.sale-item {
+	margin-bottom: 40px;
+
+	width: 25%;
+}
+
+/*@media screen and (max-width: 576px) {
+	.container {
+		justify-content: center;
+		margin: 0 auto;
+	}
+	.row {
+		flex-wrap: wrap;
+	}
+	.header-img {
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-text {
+		width: 100%;
+		text-align: center;
+	}
+}*/
