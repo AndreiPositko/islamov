@@ -84,6 +84,7 @@ img {
 
 .buttons {
 	margin-left: -20px;
+	margin-right: -20px;
 }
 
 .button {
@@ -130,6 +131,8 @@ img {
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
+
+	flex-basis: 0 0 25%;
 }
 
 .feature-item__img {
