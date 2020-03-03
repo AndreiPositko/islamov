@@ -13,6 +13,7 @@ body {
 img {
 	max-width: 100%;
 	max-height: 100%;
+	padding: 0 15px;
 }
 
 
@@ -164,10 +165,6 @@ img {
 	margin-bottom: 40px;
 
 	width: 25%;
-}
-
-.sale-item__picture {
-	padding: 0 15px;
 }
 
 @media screen and (max-width: 1140px) {
