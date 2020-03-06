@@ -8,12 +8,41 @@
   <meta name="author" content="">
 
   <title>Добрый картон</title>
-
-	<link rel="stylesheet" href="libs/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="libs/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+ 
 </head>
 <body>
-  header.header>.container>.row
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-4">
+          <div class="header-logo">
+            <img src="img/header-logo.png" alt="Логотип добрый картон">
+          </div>
+          <!-- /.header-logo -->
+        </div>
+        <!-- /.col-4 -->
+        <div class="col-8">
+          <div class="header-contacts">
+            <div class="header-contacts__phone">8 (347) 271-54-28</div>
+            <div class="header-contacts__phone">8 (937) 363-30-00</div>
+            <button class="header-contacts__button button">
+              <img src="img/button-icon.png" alt="Иконка кнопки позвонить">
+              Заказать звонок
+            </button>
+            
+          </div>
+          <!-- /.header-contacts -->
+        </div>
+        <!-- /.col-8 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
 
   <script src="main.js"></script>
 </body>

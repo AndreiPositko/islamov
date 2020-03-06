@@ -132,7 +132,7 @@ img {
 	align-items: center;
 	text-align: center;
 
-	flex-basis: 0 0 25%;
+	flex: 0 0 25%;
 }
 
 .feature-item__img {

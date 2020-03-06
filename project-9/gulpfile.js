@@ -1,4 +1,4 @@
-const CSS_SYNTAX = 'scss'; // Syntax: sass or scss;
+const CSS_SYNTAX = 'sass'; // Syntax: sass or scss;
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -41,7 +41,7 @@ function styles() {
     .on('error', sass.logError)
     .pipe(postcss([
       require('postcss-preset-env')(),
-      require('cssnano')
+      
     ]))
     .pipe(gulp.dest(`dist/css`))
     .pipe(browsersync.reload({ stream: true }));
@@ -86,6 +86,13 @@ function libsJs() {
     .pipe(browsersync.reload({ stream: true }));
 }
 
+function fonts() {
+  return gulp
+    .src(`dev/fonts/**`)
+    .pipe(gulp.dest(`dist/fonts`))
+    .pipe(browsersync.reload({ stream: true }));
+}
+
 function cleaner() {
   return gulp
     .src(`dist/`,{
@@ -101,12 +108,14 @@ function watch() {
   images();
   libsJs();
   libsCss();
+  fonts();
   gulp.watch(`dev/index.html`, html);
   gulp.watch(`dev/${ CSS_SYNTAX }/*.${ CSS_SYNTAX }`, styles);
   gulp.watch(`dev/js/*.js`, scripts);
   gulp.watch(`dev/img`, images);
   gulp.watch(`dev/libs/css`, libsCss);
   gulp.watch(`dev/libs/js`, libsJs);
+  gulp.watch(`dev/fonts/`, fonts);
 }
 
 exports.default = gulp.series(cleaner, gulp.parallel(createServer, watch));

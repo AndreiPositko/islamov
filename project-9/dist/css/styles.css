@@ -1,1 +1,29 @@
-.main{line-height:2;width:100px}.main__title{font-size:12px}
+@import url(roboto.css);
+body {
+  background-color: #fff;
+  font-family: 'Roboto Reg', sans-serif;
+  color: #373737; }
+
+.header {
+  background-color: #ffffff; }
+  .header-contacts {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+            align-items: center; }
+    .header-contacts__phone {
+      font-size: 22px;
+      font-weight: 500;
+      margin-right: 15px; }
+
+.button {
+  font-size: 14px;
+  background-color: #ff9d00;
+  color: #ffffff;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 5px; }
+  .button img {
+    vertical-align: middle; }
