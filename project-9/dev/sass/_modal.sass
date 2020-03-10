@@ -1,0 +1,34 @@
+.overlay
+	position: fixed
+	display: block 
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	background-color: rgba(0, 0, 0, 0.4)
+	.popup
+		position: fixed
+		left: 50%
+		width: 752px
+		top: 100px
+		transform: translateX(-50%)
+		background-color: #fff
+		&-close
+			position: absolute
+			right: -20px
+			top: -30px
+			font-size: 35px
+			color: #fff
+			font-weight: 300
+			cursor: pointer
+		&-title
+			display: block
+			width: 100%
+			min-height: 70px
+			background-color: $active-color
+			color: $text-color-light
+			text-transform: uppercase
+			font-size: 21px
+			text-align: center
+			font-weight: 500
+			line-height: 70px
