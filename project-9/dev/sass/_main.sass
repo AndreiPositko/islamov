@@ -1,0 +1,79 @@
+.application
+	position: relative
+	padding-top: 65px
+	padding-bottom: 60px
+	background-color: #373737
+	background-image: url(../img/main/main-background.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	color: $text-color-light
+	z-index: 1 
+	/*Затемнение фон изображения на главном экране*/
+	&::before 
+		content: ''
+		display: block 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: 0
+	 /*Оформление главной картинки*/
+	&-img
+		position: relative
+		&::before 
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 360px
+			height: 360px 
+			border: 1px solid #fff
+			border-radius: 50%
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+	/*Заголовок*/
+	&-text
+		&__title
+			font-size: 41px
+			font-weight: 700
+			margin-bottom: 10px
+		&__subtitle
+			font-size: 28px
+			font-weight: 300
+			margin-bottom: 24px	
+	&-form
+
+		background-color: rgba(255, 255, 255, 0.2)
+		padding: 30px 27px
+		max-width: 550px
+		&__title
+			padding-right: 80px
+			font-size: 20px
+			font-weight: 200
+			line-height: 30px
+			color: #d9d9d7
+		&__important
+			display: block 
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 30px
+			margin-bottom: 20px
+		&__small
+			font-size: 14px
+			font-weight: 300
+.form
+	display: flex
+	margin-bottom: 12px
+	&-input
+		border: none
+		border-radius: 4px
+		padding: 20px
+		vertical-align: middle
+		flex-basis: 50%
+		margin-right: 10px
+		
+
+
