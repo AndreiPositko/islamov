@@ -49,7 +49,7 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src(`dev/js/main.js`)
+    .src(`dev/js/**.js`)
     .pipe(babel({
       presets: ['@babel/env']
     }))
@@ -60,7 +60,7 @@ function scripts() {
         min: '.js'
       }
     }))
-    .pipe(fileRename(JS_FILE_NAME))
+    //.pipe(fileRename(JS_FILE_NAME))
     .pipe(gulp.dest(`dist/js`))
     .pipe(browsersync.reload({ stream: true }));
 }

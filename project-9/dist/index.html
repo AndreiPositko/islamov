@@ -84,20 +84,40 @@
         </section>
         <!-- /.main-section -->
     </main>
-
     <div class="overlay">
         <div class="popup">
             <div class="popup-title">Форма обратной связи</div>
             <!-- /.popup-title -->
             <div class="popup-close">&times;</div>
             <!-- /.popup close -->
-            <div class="popup-form"></div>
+            <div class="popup-form">
+                <form class="main-form" action="#">
+                    <div class="popup-form__header">
+                        Получите индивидуальное предложение
+                        <span class="popup-form__header-small">
+                            на производство и поставку изделий
+                        </span>
+                    </div>
+                    <label for="phone" class="popup-form__label">
+                        Введите ваш номер телефона:
+                    </label>
+                    <input type="tel" class="popup-form__input" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                    <button class="button popup-form-btn">
+                        Оставить заявку
+                    </button>
+                    <div class="popup-form__note">
+                        *Минимальный заказ 500шт
+                    </div>
+                </form>
+            </div>
             <!-- /.popup-form -->
         </div>
         <!-- /.popup -->
     </div>
     <!-- /.overlay -->
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
