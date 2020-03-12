@@ -95,10 +95,11 @@ function fonts() {
 
 function cleaner() {
   return gulp
-    .src(`dist/`,{
+    .src(`dist/**`,{
       read: false
     })
-    .pipe(clean());
+    .pipe(clean())
+    .pipe(gulp.dest('dist'));
 }
 
 function watch() {
