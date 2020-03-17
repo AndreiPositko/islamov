@@ -49,7 +49,7 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src(`dev/js/main.js`)
+    .src(`dev/js/**.js`)
     .pipe(babel({
       presets: ['@babel/env']
     }))
@@ -60,7 +60,7 @@ function scripts() {
         min: '.js'
       }
     }))
-    .pipe(fileRename(JS_FILE_NAME))
+    //.pipe(fileRename(JS_FILE_NAME))
     .pipe(gulp.dest(`dist/js`))
     .pipe(browsersync.reload({ stream: true }));
 }
@@ -95,10 +95,11 @@ function fonts() {
 
 function cleaner() {
   return gulp
-    .src(`dist/`,{
+    .src(`dist/**`,{
       read: false
     })
-    .pipe(clean());
+    .pipe(clean())
+    .pipe(gulp.dest('dist'));
 }
 
 function watch() {

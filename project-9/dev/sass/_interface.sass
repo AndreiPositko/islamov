@@ -1,13 +1,37 @@
+.section
+	&-title
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px	
+		&::after
+			content: ''
+			display: block 
+			margin-top: 10px	
+			height: 6px
+			background: url(../img/products/icon-section-title.png) center no-repeat 
+
+
 .button
 	font-size: 14px
 	background-color: $active-color
 	color: $text-color-light
-	border: none
+	border: 1px solid transparent
 	padding: 13px 22px
 	border-radius: 5px
 	&:hover
 		background-color: lighten($active-color, 10)
 		cursor: pointer
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba(#9d9d9d, 0.6)
+		&:hover
+			background-color: lighten($active-color, 10)
+			cursor: pointer
+			color: $text-color-light
+			border: 1px solid transparent
 	img
 		vertical-align: middle
 	&-big 
