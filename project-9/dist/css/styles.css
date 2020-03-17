@@ -34,6 +34,28 @@ body {
         border-right: 1px solid #cfcfd0;
         padding-right: 13px; }
 
+@-webkit-keyframes move {
+  from {
+    opacity: 0;
+    margin-top: -100px; }
+  to {
+    opacity: 1;
+    margin: 0; } }
+
+@keyframes move {
+  from {
+    opacity: 0;
+    margin-top: -100px; }
+  to {
+    opacity: 1;
+    margin: 0; } }
+
+.animate {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
+
 .section-title {
   font-size: 27px;
   font-weight: 700;
@@ -344,4 +366,4 @@ body {
 
 .section-form__button {
   padding: 21px 30px;
-  margin-bottom: 10px; }
+  margin-bottom: 50px; }

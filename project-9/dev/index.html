@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-5">
-                        <div class="application-img">
+                        <div class="application-img wow bounceIn">
                             <img src="img/main/main-img-boxex.png" alt="Картон">
                         </div>
                     </div>
@@ -115,7 +116,7 @@
                 </div>
                 <!-- /.numbers -->
                 <div class="features-blocks">
-                    <div class="features-item">
+                    <div class="features-item wow fadeInUp">
                         <div class="features-item__img">
                             <img src="img/features/feature-img-1.png" alt="Производство">
                         </div>
@@ -219,7 +220,7 @@
         <!-- /.features -->
         <section class="products">
             <div class="container">
-                <h2 class="section-title">Наша продукция</h2>
+                <h2 class="section-title wow flip">Наша продукция</h2>
                 <div class="row">
                     <div class="col-6">
                         <div class="products-block">
@@ -323,6 +324,10 @@
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
