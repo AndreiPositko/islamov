@@ -34,43 +34,21 @@ body {
         border-right: 1px solid #cfcfd0;
         padding-right: 13px; }
 
-/*@keyframes move
-	from
-		opacity: 0
-		margin-bottom: -300px
-	to
-		opacity: 1
-		margin: 0*/
 @-webkit-keyframes move {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px); }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); } }
+  from {
+    opacity: 0;
+    margin-bottom: -300px; }
+  to {
+    opacity: 1;
+    margin: 0; } }
+
 @keyframes move {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px); }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); } }
+  from {
+    opacity: 0;
+    margin-bottom: -300px; }
+  to {
+    opacity: 1;
+    margin: 0; } }
 
 .animate {
   -webkit-animation-name: move;
@@ -118,6 +96,18 @@ body {
     padding: 20px;
     vertical-align: middle; }
 
+/*Затемнение фон изображения на главном экране*/
+.dark-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; }
+
 .application {
   position: relative;
   padding-top: 65px;
@@ -129,19 +119,8 @@ body {
   background-size: cover;
   color: #ffffff;
   z-index: 1;
-  /*Затемнение фон изображения на главном экране*/
+  /*Оформление главной картинки*/
   /*Заголовок*/ }
-  .application::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-    /*Оформление главной картинки*/ }
   .application-img {
     position: relative; }
     .application-img::before {
@@ -333,61 +312,42 @@ body {
       font-weight: 700;
       margin-bottom: 28px; }
     .products-block__btn {
-      margin-right: 12px;
-      margin-bottom: 35px; }
+      margin-right: 12px; }
 
-.page-form {
+.offer {
   position: relative;
-  background: url(../img/section-form/section-form-bg.jpg) center no-repeat;
-  background-size: cover;
   padding-top: 65px;
   padding-bottom: 70px;
-  text-align: center;
   color: #ffffff;
-  z-index: 1; }
-  .page-form::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1; }
-
-.section-form__header {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 35px; }
-  .section-form__header-small {
-    display: block;
-    font-size: 26px;
+  background: grey url(../img/section-form/section-form-bg.jpg) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  text-align: center; }
+  .offer-title {
+    font-size: 32px;
+    font-weight: 400;
     margin-bottom: 32px; }
-
-.section-form__label {
-  display: block;
-  color: #b8b8b6;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 17px; }
-
-.section-form__input {
-  display: inline-block;
-  text-align: center;
-  padding: 21px 120px;
-  color: #b8b8b6;
-  font-size: 14px;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  margin-right: 20px; }
-
-.section-form__note {
-  color: #b8b8b6;
-  font-size: 14px;
-  font-weight: 300; }
-
-.section-form__button {
-  padding: 21px 30px;
-  margin-bottom: 50px; }
+    .offer-title_small {
+      display: block;
+      font-size: 26px; }
+  .offer-form {
+    margin: 0 auto;
+    max-width: 365px; }
+    .offer-form__label {
+      display: block;
+      margin-bottom: 17px;
+      font-size: 20px;
+      font-weight: 300; }
+    .offer-form__input {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      color: #b8b8b6;
+      font-size: 14px;
+      font-weight: 300;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 12px; }
+    .offer-form__button {
+      margin-bottom: 10px; }

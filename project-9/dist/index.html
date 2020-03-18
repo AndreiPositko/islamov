@@ -10,8 +10,10 @@
     <title>Добрый картон</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/animate.css">
+
 </head>
 
 <body>
@@ -44,12 +46,16 @@
     </header>
     <!-- /.header -->
     <main class="main">
-        <section class="application">
+        <section class="application dark-bg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-5">
+
                         <div class="application-img animate">
-                            <img src="img/main/main-img-boxex.png" alt="Картон">
+                            <div class="fotorama" data-transition="crossfade" data-loop="true" data-keyboard="true">
+                                <img src="img/main/main-img-boxex.png" alt="Картон">
+                                <img src="img/main/main-img-boxex-2.png" alt="Картон">
+                            </div>
                         </div>
                     </div>
                     <!-- /.col-5 -->
@@ -72,7 +78,7 @@
                                     <input class="form-input" type="tel" placeholder="Введите номер телефона">
                                     <button class="button button-big" type="submit">Оставить заявку!</button>
                                 </form>
-                                <small class="application-form__small">*Минимальный заказ 500шт</small>
+                                <small class="form-small application-form__small">*Минимальный заказ 500шт</small>
                                 <!-- /.form -->
                             </div> <!-- /.form-title -->
                         </div>
@@ -270,25 +276,67 @@
                 </div>
             </div>
         </section>
-        <section class="page-form">
+
+        <section class="offer dark-bg">
             <div class="container">
-                <form action="#" class="section-form">
-                    <div class="section-form__header">
-                        Получите индивидуальное предложение
-                        <span class="section-form__header-small">на производство и поставку изделий</span>
-                    </div>
-                    <!-- /.section-form__header -->
-                    <label class="section-form__label" for="phone">Введите ваш номер телефона:</label>
-                    <input type="tel" class="section-form__input" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
-                    <button class="button section-form__button">Оставить заявку!</button>
-                    <div class="section-form__note">*Минимальный заказ 500шт</div>
-                    <!-- /.section-form__note -->
-                </form>
-                <!-- /.section-form -->
+                <h2 class="offer-title">
+                    Получите индивидуальное предложение
+                    <span class="offer-title_small">на производство и поставку изделий</span>
+                </h2>
+                <!-- /.offer-title -->
+                <div class="offer-form">
+                    <form action="#">
+                        <label class="offer-form__label" for="phone">Введите ваш номер телефона:</label>
+                        <input type="tel" class="offer-form__input" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+                        <button type="submit" class="button offer-form__button">Оставить заявку!</button>
+                    </form>
+                    <small class="offer-small">*Минимальный заказ 500шт</small>
+                </div>
+                <!-- /.offer-form -->
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.form -->
+        <!-- /.offer -->
+        <section class="production">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="production-slider-top">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <!-- /.production-slider-top -->
+                        <div class="production-slider-bottom">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <!-- /.production-slider-bottom -->
+                    </div>
+                    <!-- /.col-7 -->
+                    <div class="col-5">
+                        <div class="production-text">
+                            <h2 class="production-text__title"></h2>
+                            <!-- /.production-text__title -->
+                            <p class="production-text__descr">Современное оборудование позволяет произ- водить до 5 миллионов</p>
+                            <!-- /.production-text__descr -->
+                        </div>
+                        <!-- /.production-text -->
+                    </div>
+                    <!-- /.col-5 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.production -->
         <!-- /.main-section -->
     </main>
     <div class="overlay">
@@ -324,6 +372,9 @@
     <!-- /.overlay -->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
