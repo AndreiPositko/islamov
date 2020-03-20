@@ -351,3 +351,40 @@ body {
       margin-bottom: 12px; }
     .offer-form__button {
       margin-bottom: 10px; }
+
+.production {
+  padding-top: 85px;
+  padding-bottom: 85px; }
+  .production-text {
+    padding-top: 20px; }
+    .production-text__title {
+      color: #ffffff;
+      background-color: #ff9d00;
+      font-size: 28px;
+      width: 100%;
+      max-width: 380px;
+      padding-top: 18px;
+      padding-bottom: 16px;
+      padding-left: 5px;
+      margin-bottom: 28px; }
+    .production-text__descr {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: justify;
+      width: 100%;
+      max-width: 380px; }
+
+.feedback {
+  padding-top: 55px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: #f4f4f4; }
+  .feedback-title {
+    margin-bottom: 30px; }
+  .feedback-slider {
+    margin: 0 auto; }
+    .feedback-slider__img {
+      margin-right: 30px; }
+    .feedback-slider .slick-arrow {
+      background: url("./img/feedback/arrow-nent") 0 0/100% no-repeat; }
