@@ -384,7 +384,9 @@ body {
     margin-bottom: 30px; }
   .feedback-slider {
     margin: 0 auto; }
-    .feedback-slider__img {
-      margin-right: 30px; }
-    .feedback-slider .slick-arrow {
-      background: url("./img/feedback/arrow-nent") 0 0/100% no-repeat; }
+    .feedback-slider .slick-arrow.slick-prev {
+      left: -33px; }
+      .feedback-slider .slick-arrow.slick-prev::before {
+        content: url(../img/feedback/arrow-prev.png); }
+    .feedback-slider .slick-arrow.slick-next::before {
+      content: url(../img/feedback/arrow-next.png); }

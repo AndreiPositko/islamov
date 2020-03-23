@@ -8,7 +8,19 @@
 	&-slider
 		margin: 0 auto
 		&__img
-			margin-right: 30px
-		.slick-arrow
-			background: url('./img/feedback/arrow-nent') 0 0 / 100% no-repeat
+			// margin-right: 30px
+
+		.slick-arrow.slick-prev
+			left: -33px
+			&::before
+				content: url(../img/feedback/arrow-prev.png)
+		.slick-arrow.slick-next
+			&::before
+				content: url(../img/feedback/arrow-next.png)
+
+
+								
+		
+					
+
 			
