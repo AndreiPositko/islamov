@@ -1,17 +1,26 @@
 .header
 	padding: 20px 0
 	background-color: $text-color-light
+	&-logo
+		background: url(../img/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 161px
+		height: 61px
+	
 	&-contacts
 		display: flex
 		justify-content: flex-end
 		align-items: center
+		&__phones
+			display: flex
 		&__phone
 			font-size: 22px
-			font-weight: 500
 			margin-right: 15px
 			&:first-child
 				border-right: 1px solid #cfcfd0
 				padding-right: 13px
+					
+			
 
 		
 @keyframes move
