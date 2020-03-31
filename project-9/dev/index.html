@@ -13,29 +13,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-4">
+                <div class="col-3 col-md-4">
                     <div class="header-logo">
-                        <img src="img/header-logo.png" alt="Логотип добрый картон">
                     </div>
                     <!-- /.header-logo -->
                 </div>
                 <!-- /.col-4 -->
-                <div class="col-8">
+                <div class="col-9 col-md-8">
                     <div class="header-contacts">
-                        <div class="header-contacts__phone">8 (347) 271-54-28</div>
-                        <div class="header-contacts__phone">8 (937) 363-30-00</div>
+                        <div class="header-contacts__phones">
+                            <div class="header-contacts__phone">8 (347) 271-54-28</div>
+                            <div class="header-contacts__phone">8 (937) 363-30-00</div>
+                        </div>
                         <button class="header-contacts__button button">
                             <img src="img/button-icon.png" alt="Иконка кнопки позвонить">
-                            Заказать звонок
+                            <span class="hidden-mobile">Заказать звонок</span>
                         </button>
                     </div>
                     <!-- /.header-contacts -->
@@ -51,8 +52,8 @@
         <section class="application dark-bg">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-5">
-                        <div class="application-img animate">
+                    <div class="col-12 col-md-5">
+                        <div class="application-img animate hidden-mobile">
                             <div class="fotorama" data-transition="crossfade" data-loop="true" data-keyboard="true">
                                 <img src="img/main/main-img-boxex.png" alt="Картон">
                                 <img src="img/main/main-img-boxex-2.png" alt="Картон">
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                     <!-- /.col-5 -->
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="application-text">
                             <h1 class="application-text__title">
                                 Производство упаковки из гофрокартона
@@ -340,7 +341,103 @@
             <!-- /.container -->
         </section>
         <!-- /.production -->
-        section.clients>.container>h2.section-title+.row>col-3*4|c
+        <section class="clients">
+            <div class="container">
+                <h2 class="section-title">Наши клиенты</h2>
+                <!-- /.section-title -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="./img/clients/picture-1.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-2.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-3.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-4.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-5.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-6.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-7.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-8.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-9.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-10.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="clients-wrapper">
+                            <a href="#" class="clients-link">
+                                <img src="img/clients/picture-11.png" alt="Логотип клиентов" class="clients-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <div class="clients-wrapper">
+                                <a href="#" class="clients-link">
+                                    <img src="img/clients/picture-12.png" alt="Логотип клиентов" class="clients-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.clients -->
         <section class="feedback">
             <div class="container">
                 <h2 class="section-title feedback-title">Отзывы о сотрудничестве</h2>

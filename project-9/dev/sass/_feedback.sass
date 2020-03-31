@@ -6,15 +6,32 @@
 	&-title 
 		margin-bottom: 30px 	
 	&-slider
-		margin: 0 auto
+		position: relative
 		&__img
-			// margin-right: 30px
+			width: 100%
+
+		.slick-slide
+			padding: 0 15px
 
 		.slick-arrow.slick-prev
-			left: -33px
+			position: absolute
+			font-size: 0
+			border: none
+			background-color: $bg-color-light
+			top: 50%
+			left: -15px
+			transform: translate(-50%)
+			z-index: 1
 			&::before
 				content: url(../img/feedback/arrow-prev.png)
+
 		.slick-arrow.slick-next
+			position: absolute
+			font-size: 0
+			border: none
+			background-color: $bg-color-light
+			top: 50%
+			right: -20px
 			&::before
 				content: url(../img/feedback/arrow-next.png)
 
