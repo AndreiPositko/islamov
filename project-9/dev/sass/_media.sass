@@ -1,4 +1,4 @@
-@media (max-width: 576px)
+@media (max-width: 576px), (max-width: 768px)
 	.hidden-mobile
 		display: none
 
@@ -14,7 +14,7 @@
 			
 			&__phone
 				font-size: 14px
-				margin-right: 0
+				margin-right: 0px
 				&:first-child
 					border: none
 			&__button
@@ -34,14 +34,14 @@
 
 		&-form
 			background-color: transparent
-			padding: 0
+			padding: 0px
 			&-input
 				
 				display: block
 			&__title
 				font-size: 15px
 				line-height: 20px
-				padding: 0
+				padding: 0px
 
 			.form 
 				display: block
@@ -50,7 +50,7 @@
 					width: 100%
 					text-align: center
 					margin-bottom: 13px
-					margin-right: 0
+					margin-right: 0px
 					padding: 15px
 				&-button
 					padding: 20px 30px
@@ -62,7 +62,7 @@
 		&-item
 			flex-basis: 100%
 			padding: 22px 17px
-			margin-bottom: 0
+			margin-bottom: 0px
 	.numbers
 		&-block
 		 display: block
@@ -89,24 +89,43 @@
 		padding-bottom: 55px
 		text-align: center
 		&-text
+			display: flex
+			flex-direction: column
+			align-items: center
 			&__title
 				text-transform: uppercase
 				font-size: 20px
+				
 			&__desr
 				font-size: 14px
+
+				
 	.clients
 		padding-bottom: 30px
 		&-wrapper
 			filter: grayscale(0)
 			margin-bottom: 10px
 		&-block
-			padding: 0 4px
+			padding: 0px 4px
 		&-row
-			margin: 0 -8px
+			margin: 0px -8px
 	
-	.feedback
-		&-slider
-			.slick-arrow .slick-next
-				display: none
+	// .feedback-slider	
+	// 	.slick-arrow .slick-next
+	// 		display: none
 
+@media (max-width: 992px)
+	.hidden-mobile
+		display: none
+
+	.application
+		&-text
+			text-align: center
+		&-form 
+			margin: 0px auto
+	.numbers
+		&-block 
+			display: block
+			margin: 0px auto
+			width: 100%
 

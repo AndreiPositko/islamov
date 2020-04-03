@@ -443,7 +443,7 @@ body {
     max-height: 100%;
     max-width: 100%; }
 
-@media (max-width: 576px) {
+@media (max-width: 576px), (max-width: 768px) {
   .hidden-mobile {
     display: none; }
   .header-logo {
@@ -457,7 +457,7 @@ body {
             flex-direction: column; }
   .header-contacts__phone {
     font-size: 14px;
-    margin-right: 0; }
+    margin-right: 0px; }
     .header-contacts__phone:first-child {
       border: none; }
   .header-contacts__button {
@@ -474,13 +474,13 @@ body {
       margin-bottom: 40px; }
     .application-form {
       background-color: transparent;
-      padding: 0; }
+      padding: 0px; }
       .application-form-input {
         display: block; }
       .application-form__title {
         font-size: 15px;
         line-height: 20px;
-        padding: 0; }
+        padding: 0px; }
       .application-form .form {
         display: block; }
         .application-form .form-input {
@@ -488,7 +488,7 @@ body {
           width: 100%;
           text-align: center;
           margin-bottom: 13px;
-          margin-right: 0;
+          margin-right: 0px;
           padding: 15px; }
         .application-form .form-button {
           padding: 20px 30px; }
@@ -502,7 +502,7 @@ body {
     .features-item {
       flex-basis: 100%;
       padding: 22px 17px;
-      margin-bottom: 0; }
+      margin-bottom: 0px; }
   .numbers-block {
     display: block;
     width: 100%; }
@@ -524,11 +524,19 @@ body {
     padding-top: 30px;
     padding-bottom: 55px;
     text-align: center; }
-    .production-text__title {
-      text-transform: uppercase;
-      font-size: 20px; }
-    .production-text__desr {
-      font-size: 14px; }
+    .production-text {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center; }
+      .production-text__title {
+        text-transform: uppercase;
+        font-size: 20px; }
+      .production-text__desr {
+        font-size: 14px; }
   .clients {
     padding-bottom: 30px; }
     .clients-wrapper {
@@ -536,8 +544,18 @@ body {
               filter: grayscale(0);
       margin-bottom: 10px; }
     .clients-block {
-      padding: 0 4px; }
+      padding: 0px 4px; }
     .clients-row {
-      margin: 0 -8px; }
-  .feedback-slider .slick-arrow .slick-next {
-    display: none; } }
+      margin: 0px -8px; } }
+
+@media (max-width: 992px) {
+  .hidden-mobile {
+    display: none; }
+  .application-text {
+    text-align: center; }
+  .application-form {
+    margin: 0px auto; }
+  .numbers-block {
+    display: block;
+    margin: 0px auto;
+    width: 100%; } }
